@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Downloader — Download Video Tanpa Watermark</title>
+<meta name="description" content="Download video TikTok tanpa watermark, kualitas HD, plus audio MP3 dan foto slideshow. Gratis, tanpa daftar, tinggal tempel link.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">TikTok<span>DL</span></a>
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <a href="#unduh">Unduh</a>
+    <a href="#cara-pakai">Cara Pakai</a>
+  </nav>
+</header>
+<div class="tape" aria-hidden="true"><span>Tanpa Watermark * Kualitas HD * Audio MP3 * Foto Slideshow * Gratis * Tanpa Watermark * Kualitas HD * Audio MP3 * Foto Slideshow * Gratis *</span></div>
+
+<main id="top">
+  <section class="hero">
+    <p class="hero-kicker">Gratis · Tanpa daftar · Tanpa ribet</p>
+    <h1>TikTok Downloader <span class="hl">tanpa watermark.</span></h1>
+    <p class="hero-sub">Tempel link video TikTok, unduh versi bersihnya — <strong>tanpa watermark</strong>, bisa kualitas HD, bisa juga ambil audionya aja jadi MP3. Postingan foto slideshow? Fotonya bisa diunduh satu-satu.</p>
+  </section>
+
+  <section id="unduh" class="panel" aria-label="Form download TikTok">
+    <h2>Tempel link-nya di sini</h2>
+    <form id="dl-form" novalidate>
+      <div class="field">
+        <label for="input-url">Link video / foto TikTok</label>
+        <div class="input-row">
+          <input id="input-url" type="url" placeholder="https://www.tiktok.com/@user/video/1234567890" autocomplete="off" spellcheck="false" inputmode="url">
+          <button class="btn btn-ghost btn-paste" id="paste-button" type="button">Tempel</button>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-download-main" id="submit-button" type="submit">Download →</button>
+      <p class="form-note">Tombol unduh membuka file di tab baru — kalau videonya langsung muter, tekan titik tiga di pojok video lalu pilih “Download”. Itu batasan browser buat file dari server lain, bukan error.</p>
+    </form>
+    <p class="error-box" id="error-box" role="alert" hidden></p>
+  </section>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <div class="result-card">
+      <div class="result-media">
+        <img id="result-cover" alt="Thumbnail video TikTok" referrerpolicy="no-referrer">
+      </div>
+      <div class="result-info">
+        <p class="result-kicker">Siap diunduh</p>
+        <h2 class="result-title" id="result-title">—</h2>
+        <p class="result-author" id="result-author">—</p>
+        <div class="result-actions" id="result-actions"></div>
+      </div>
+    </div>
+    <div class="photos" id="photos" hidden>
+      <h3 class="photos-title">Foto slideshow <span class="photos-count" id="photos-count"></span></h3>
+      <div class="photos-grid" id="photos-grid"></div>
+    </div>
+  </section>
+
+  <section id="cara-pakai" class="section">
+    <h2>Cara pakai</h2>
+    <span class="section-sub">tiga langkah, kelar ↓</span>
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <h3>Salin link dari TikTok</h3>
+        <p>Buka video atau postingan fotonya di aplikasi TikTok, tekan tombol <strong>Bagikan</strong>, lalu pilih <strong>Salin tautan</strong>.</p>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <h3>Tempel di atas</h3>
+        <p>Tekan tombol <strong>Tempel</strong> atau paste manual ke kolom link, terus tekan <strong>Download</strong>. Tunggu sedetik, videonya lagi disiapin.</p>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <h3>Pilih versi yang mau disimpan</h3>
+        <p>Mau yang HD, yang tanpa watermark, atau audionya aja buat nada dering — tinggal klik tombolnya. Selesai, file-nya masuk galeri kamu.</p>
+      </li>
+    </ol>
+    <p class="disclaimer">Unduh cuma buat pemakaian pribadi ya. Video dan foto tetap milik kreatornya — jangan di-upload ulang atau dijual tanpa izin.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Dibuat oleh <strong>Remike Dev</strong></p>
+    <p><a href="https://github.com/kirax-12" target="_blank" rel="noopener">github.com/kirax-12</a> · <a href="#top">Kembali ke atas ↑</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
